@@ -100,6 +100,8 @@
 #define RT_HWCRYPTO_DEFAULT_NAME "hwcryto"
 #define RT_HWCRYPTO_IV_MAX_SIZE 16
 #define RT_HWCRYPTO_KEYBIT_MAX_SIZE 256
+#define RT_HWCRYPTO_USING_MD5
+#define RT_HWCRYPTO_USING_SHA1
 
 /* Using USB */
 
@@ -175,22 +177,17 @@
 
 /* system packages */
 
+#define PKG_USING_FAL
+#define FAL_DEBUG_CONFIG
+#define FAL_DEBUG 1
+#define FAL_PART_HAS_TABLE_CFG
+#define PKG_USING_FAL_V00400
+#define PKG_FAL_VER_NUM 0x00400
 
 /* peripheral libraries and drivers */
 
-#define PKG_USING_U8G2
-#define U8G2_USE_HW_I2C
-#define U8G2_I2C_DEVICE_NAME "i2c1"
-
-/* U8G2 Examples */
-
-#define PKG_USING_U8G2_C_LATEST_VERSION
-
-/* C   version: v1.x.x */
-
-/* C++ version: v2.x.x */
-
-#define PKG_U8G2_VER_NUM 0x19999
+#define BSP_USING_SPI1
+#define BSP_USING_SPI2
 
 /* miscellaneous packages */
 
@@ -215,10 +212,10 @@
 #define BSP_USING_UART
 #define BSP_USING_UART1
 #define BSP_USING_SPI
-#define BSP_USING_SPI2
 #define BSP_USING_I2C1
 #define BSP_I2C1_SCL_PIN 22
 #define BSP_I2C1_SDA_PIN 23
+#define BSP_USING_ON_CHIP_FLASH
 #define BSP_USING_UDID
 
 /* Board extended module Drivers */

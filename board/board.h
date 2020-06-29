@@ -20,11 +20,11 @@ extern "C" {
 #endif
 
 #define STM32_FLASH_START_ADRESS     ((uint32_t)0x08000000)
-#define STM32_FLASH_SIZE             (128 * 1024)
+#define STM32_FLASH_SIZE             (512 * 1024)
 #define STM32_FLASH_END_ADDRESS      ((uint32_t)(STM32_FLASH_START_ADRESS + STM32_FLASH_SIZE))
 
 /* Internal SRAM memory size[Kbytes] <8-64>, Default: 64*/
-#define STM32_SRAM_SIZE      20
+#define STM32_SRAM_SIZE      64
 #define STM32_SRAM_END       (0x20000000 + STM32_SRAM_SIZE * 1024)
 
 #if defined(__CC_ARM) || defined(__CLANG_ARM)
